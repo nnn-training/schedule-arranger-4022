@@ -267,7 +267,7 @@ app.get('/:scheduleId/edit', async (c) => {
           <button type="submit">以上の内容で予定を編集する</button>
         </form>
         <h3>危険な変更</h3>
-        <form method="post" action="/schedules/${schedule.scheduleId}/delete">
+        <form method="post" action="/schedules/${schedule.scheduleId}/delete" id="delete-schedule-form">
           <button type="submit">この予定を削除する</button>
         </form>
       `,
